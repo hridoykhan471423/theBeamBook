@@ -1,62 +1,106 @@
 <!doctype html>
-<meta charset="UTF-8" />
-<title>Auth0 Sample App</title>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Auth0 JavaScript SDK authentication demo" />
+  <title>Auth0 Secure Dashboard</title>
+  <style>
+    * { box-sizing: border-box; }
+    :root { color-scheme: dark; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    body { margin: 0; min-height: 100vh; background: radial-gradient(circle at top, #202a44 0, #0b1020 42%, #060913 100%); color: #f7f8fc; }
+    button { font: inherit; cursor: pointer; }
+    .shell { width: min(920px, calc(100% - 32px)); margin: 0 auto; padding: 56px 0; }
+    .card { border: 1px solid rgba(255,255,255,.12); border-radius: 24px; background: rgba(15, 21, 39, .82); box-shadow: 0 24px 80px rgba(0,0,0,.35); backdrop-filter: blur(18px); overflow: hidden; }
+    .hero { padding: 42px; border-bottom: 1px solid rgba(255,255,255,.09); }
+    .badge { display: inline-flex; padding: 7px 11px; border-radius: 999px; background: rgba(99,102,241,.16); color: #c7d2fe; font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+    h1 { margin: 16px 0 10px; font-size: clamp(32px, 6vw, 52px); line-height: 1.05; }
+    h2 { margin: 0 0 14px; font-size: 24px; }
+    p { color: #aeb8cc; line-height: 1.65; }
+    .content { padding: 34px 42px 42px; }
+    .actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 26px; }
+    .btn { border: 0; border-radius: 12px; padding: 13px 18px; font-weight: 750; transition: transform .15s ease, opacity .15s ease; }
+    .btn:hover { transform: translateY(-1px); }
+    .btn:disabled { opacity: .55; cursor: wait; transform: none; }
+    .primary { background: #fff; color: #0b1020; }
+    .secondary { background: rgba(255,255,255,.09); color: #fff; border: 1px solid rgba(255,255,255,.1); }
+    .danger { background: rgba(248,113,113,.13); color: #fecaca; border: 1px solid rgba(248,113,113,.25); }
+    .profile { margin-top: 26px; padding: 22px; border: 1px solid rgba(255,255,255,.1); border-radius: 16px; background: rgba(0,0,0,.18); overflow: auto; }
+    .profile pre { margin: 0; white-space: pre-wrap; overflow-wrap: anywhere; color: #cbd5e1; font-size: 13px; line-height: 1.6; }
+    .email { color: #fff; font-weight: 700; }
+    .error { padding: 18px; border-radius: 14px; background: rgba(239,68,68,.12); border: 1px solid rgba(239,68,68,.3); color: #fecaca; }
+    .loading { min-height: 300px; display: grid; place-items: center; color: #aeb8cc; }
+    .spinner { width: 28px; height: 28px; border: 3px solid rgba(255,255,255,.2); border-top-color: #fff; border-radius: 50%; animation: spin .8s linear infinite; margin: 0 auto 14px; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    [hidden] { display: none !important; }
+    @media (max-width: 640px) { .shell { width: min(100% - 20px, 920px); padding: 20px 0; } .hero, .content { padding: 28px 22px; } }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="card">
+      <div id="view-loading" class="loading">
+        <div><div class="spinner"></div><div>Checking authentication…</div></div>
+      </div>
 
-<div id="view-loading">Loading...</div>
+      <div id="view-error" hidden>
+        <div class="hero"><span class="badge">Authentication</span><h1>Something went wrong</h1></div>
+        <div class="content"><div id="error-message" class="error"></div><div class="actions"><button class="btn secondary" onclick="location.reload()">Try again</button></div></div>
+      </div>
 
-<div id="view-error" hidden></div>
+      <div id="view-unauthenticated" hidden>
+        <div class="hero"><span class="badge">Auth0 JavaScript SDK</span><h1>Secure sign-in, built in.</h1><p>Use Auth0 Universal Login to securely sign up or sign in to this single-page application.</p></div>
+        <div class="content"><h2>Welcome</h2><p>Your authentication is handled by the official Auth0 SPA SDK.</p><div class="actions"><button id="signup-button" class="btn primary" onclick="client.loginWithRedirect({authorizationParams:{screen_hint:'signup'}})">Create account</button><button id="login-button" class="btn secondary" onclick="client.loginWithRedirect()">Log in</button></div></div>
+      </div>
 
-<div id="view-authenticated" hidden>
-  <p>Logged in as <span id="user-email"></span></p>
-  <h1>User Profile</h1>
-  <pre id="user-profile"></pre>
-  <button onclick="client.logout({logoutParams:{returnTo:location.origin}})">Logout</button>
-</div>
+      <div id="view-authenticated" hidden>
+        <div class="hero"><span class="badge">Authenticated</span><h1>Welcome back.</h1><p>Signed in as <span id="user-email" class="email"></span></p></div>
+        <div class="content"><h2>User Profile</h2><p>Your profile information returned by Auth0 is shown below.</p><div class="profile"><pre id="user-profile"></pre></div><div class="actions"><button id="logout-button" class="btn danger" onclick="client.logout({logoutParams:{returnTo:location.origin}})">Log out</button></div></div>
+      </div>
+    </section>
+  </main>
 
-<div id="view-unauthenticated" hidden>
-  <button onclick="client.loginWithRedirect({authorizationParams:{screen_hint:'signup'}})">Signup</button>
-  <button onclick="client.loginWithRedirect()">Login</button>
-</div>
+  <script src="https://cdn.auth0.com/js/auth0-spa-js/2.18/auth0-spa-js.production.js"></script>
+  <script>
+    const displayView = name => ['loading', 'error', 'authenticated', 'unauthenticated'].forEach(v => document.getElementById(`view-${v}`).hidden = v !== name);
+    const setTextContent = (id, content) => document.getElementById(id).textContent = content;
 
-<!-- Install the Auth0 SPA SDK -->
-<script src="https://cdn.auth0.com/js/auth0-spa-js/2.18/auth0-spa-js.production.js"></script>
+    (async () => {
+      try {
+        window.client = await auth0.createAuth0Client({
+          domain: 'dev-nvcpbgecreawhefv.us.auth0.com',
+          clientId: 'g27D2TYYSQ8ufn5cuk1SZjqAayS1fBBF',
+          authorizationParams: { redirect_uri: location.origin }
+        });
 
-<script>
-  // Helpers
-  const displayView = name => ['loading', 'error', 'authenticated', 'unauthenticated'].forEach(v => document.getElementById(`view-${v}`).hidden = v !== name);
-  const setTextContent = (id, content) => document.getElementById(id).textContent = content;
+        if (location.search.includes('error=')) {
+          const params = new URLSearchParams(location.search);
+          setTextContent('error-message', `Error: ${params.get('error')} — ${params.get('error_description') || 'Authentication failed.'}`);
+          displayView('error');
+          history.replaceState({}, '', location.pathname);
+          return;
+        }
 
-  (async () => {
-    // Initialize the Auth0 SDK
-    window.client = await auth0.createAuth0Client({
-      domain: 'dev-nvcpbgecreawhefv.us.auth0.com',
-      clientId: 'g27D2TYYSQ8ufn5cuk1SZjqAayS1fBBF',
-      authorizationParams: { redirect_uri: location.origin },
-    });
+        if (location.search.includes('code=') && location.search.includes('state=')) {
+          await window.client.handleRedirectCallback();
+          history.replaceState({}, '', location.pathname);
+        }
 
-    // Handle errors returned by Auth0 after a redirect
-    if (location.search.includes("error=")) {
-      const params = new URLSearchParams(location.search);
-      setTextContent("view-error", `Error: ${params.get("error")} — ${params.get("error_description")}`);
-      displayView("error");
-      history.replaceState({}, "", location.pathname);
-      return;
-    }
+        if (await window.client.isAuthenticated()) {
+          const user = await window.client.getUser();
+          setTextContent('user-email', user?.email || user?.name || 'Authenticated user');
+          setTextContent('user-profile', JSON.stringify(user, null, 2));
+          displayView('authenticated');
+          return;
+        }
 
-    // Handle the redirect callback after a successful login
-    if (location.search.includes("code=") && location.search.includes("state=")) {
-      await window.client.handleRedirectCallback();
-      history.replaceState({}, "", location.pathname);
-    }
-
-    if (await window.client.isAuthenticated()) {
-      const user = await window.client.getUser();
-      setTextContent("user-email", user.email);
-      setTextContent("user-profile", JSON.stringify(user, null, 2));
-      displayView("authenticated");
-      return;
-    }
-
-    displayView("unauthenticated");
-  })();
-</script>
+        displayView('unauthenticated');
+      } catch (error) {
+        console.error(error);
+        setTextContent('error-message', error?.message || 'Unable to initialize Auth0 authentication.');
+        displayView('error');
+      }
+    })();
+  </script>
+</body>
+</html>
