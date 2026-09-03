@@ -1,0 +1,111 @@
+Lead ID,Business Name,City,State,Website,Public Phone,Public Email,Lead Priority,Lead Score,Verification Level
+HVAC-001,"Atlas Electric, Air Conditioning, Refrigeration & Plumbing Services Inc.",mission,texas,atlasrgv.com,,,A,100,Source-data validated; live verification not performed
+HVAC-002,CenTex Air,austin,texas,centex-air.com,512.518.1507,info@centex-air.com,A,100,Official website verified in source dataset
+HVAC-003,Chapman Air & Heat,dallas,texas,chapmanair.com,214-340-4999,,A,100,Official website verified in source dataset
+HVAC-004,"Comfort Technologies, LLC",arlington,texas,comforttechllc.com,(972) 304-9114,,A,100,Official website verified in source dataset
+HVAC-005,Dayton A/C & Heating,austin,texas,daytonservices.com,,,A,100,Source-data validated; live verification not performed
+HVAC-006,EzComfort AC and Heating,humble,texas,ezcomfortac.com,,,A,100,Source-data validated; live verification not performed
+HVAC-007,"Fire Power Boiler Industries, LLC",houston,texas,firepowerservices.com,713-921-9500,,A,100,Official website verified in source dataset
+HVAC-008,Mercury Control Inc,sugar land,texas,mercurycontrolair.com,,,A,100,Source-data validated; live verification not performed
+HVAC-009,Metro Air Conditioning Heating & Services,dallas,texas,metroacs.com,(214) 304-7658,info@metroacs.com,A,100,Official website verified in source dataset
+HVAC-010,RELM Services,houston,texas,relmservicescorp.com,,,A,100,Source-data validated; live verification not performed
+HVAC-011,Texas Airsystems,fort worth,texas,texasairsystems.com,817.838.7400; 972.570.4700; 512.462.4777,,A,100,Official website verified in source dataset
+HVAC-012,Comfort Controls,beaumont,texas,comfortcontrols.ac,,,A,95,Source-data validated; live verification not performed
+HVAC-013,Encore Mechanical LLC,southlake,texas,encoremechanical.com,(817) 416-2881,,A,95,Official website verified in source dataset
+HVAC-014,Kahn Mechanical Contractors,dallas,texas,kahnmechanical.com,214-831-5551,,A,95,Official website verified in source dataset
+HVAC-015,M. B. Kiser Heating & Air Conditioning Co. Inc.,dallas,texas,mbkiser.com,,,A,95,Source-data validated; live verification not performed
+HVAC-016,Texas Building Controls,terrell,texas,tx-bc.com,(972) 524-2801,Service@TexasBuildingControls.com,A,95,Official website verified in source dataset
+HVAC-017,Theriot Inc.,freeport,texas,theriotinc.com,,,A,95,Source-data validated; live verification not performed
+HVAC-018,AC Repair Garland,allen,texas,acrepair-garland.com,,,A,90,Source-data validated; live verification not performed
+HVAC-019,AC Works 365,weatherford,texas,acworks365.com,,,A,90,Source-data validated; live verification not performed
+HVAC-020,ASR MECHANICAL,houston,texas,asrmechanical.com,,,A,90,Source-data validated; live verification not performed
+HVAC-021,Airheads HVAC,copperas cove,texas,airheadshvac.com,,,A,90,Source-data validated; live verification not performed
+HVAC-022,Airwaves Air Conditioning,burleson,texas,airwaves-ac.com,,,A,90,Source-data validated; live verification not performed
+HVAC-023,All Tech Services,euless,texas,alltechservicesinc.com,,,A,90,Source-data validated; live verification not performed
+HVAC-024,"B.I.M.S., Inc.",grapevine,texas,bellomyims.com,,,A,90,Source-data validated; live verification not performed
+HVAC-025,BOREAS Air Conditioning and Heating,stafford,texas,boreashvac.com,,,A,90,Source-data validated; live verification not performed
+HVAC-026,Campbell Appliance,austin,texas,campbellapplianceheatingandair.com,,,A,90,Source-data validated; live verification not performed
+HVAC-027,Core Controls,dallas,texas,corecontrolsdfw.com,,info@corecontrolsdfw.com,A,90,Official website verified in source dataset
+HVAC-028,Expert Air & Refrigeration Service,round rock,texas,expertserviceco.com,,,A,90,Source-data validated; live verification not performed
+HVAC-029,Gaitz HVACR,houston,texas,gaitzac.com,,,A,90,Source-data validated; live verification not performed
+HVAC-030,General Mechanical Services,hewitt,texas,gms-hvac.com,,,A,90,Source-data validated; live verification not performed
+HVAC-031,Jolly Brothers Services,round rock,texas,jolly-bros.com,,,A,90,Source-data validated; live verification not performed
+HVAC-032,METRO ENERGY SAVERS,arlington,texas,metroenergysavers.com,,,A,90,Source-data validated; live verification not performed
+HVAC-033,Midland Winair,midland,texas,winsupplyinc.com/location/midland-tx/79701/hvac-supplies,,,A,90,Source-data validated; live verification not performed
+HVAC-034,Miller Air Conditioning & Heating,white oak,texas,millerairconditioning.com,,,A,90,Source-data validated; live verification not performed
+HVAC-035,"Saturn Enterprises, Inc.",richardson,texas,hvacsaturn.com,817.293.8059,customerservice@hvacsaturn.com,A,90,Official website verified in source dataset
+HVAC-036,ServiceMaxx LLC,houston,texas,servicemaxxllc.com,,,A,90,Source-data validated; live verification not performed
+HVAC-037,Ski HI Mechanical Services,lubbock,texas,skihi.com,,,A,90,Source-data validated; live verification not performed
+HVAC-038,Sun Air Conditioning and Heating,stafford,texas,sunairconditioning.com,(281) 499-3916; (281) 262-1110; (281) 410-2345,,A,90,Official website verified in source dataset
+HVAC-039,Team Smart Energy,houston,texas,teamsmartenergy.net,,,A,90,Source-data validated; live verification not performed
+HVAC-040,Tezel & Cotter A/C LP,san antonio,texas,tezelandcotter.com,,,A,90,Source-data validated; live verification not performed
+HVAC-041,"Trent Technologies Inc, Engineering Research and Development",tyler,texas,trenttech.com,,,A,90,Source-data validated; live verification not performed
+HVAC-042,Uptown Heating & Air Conditioning,houston,texas,uptownac.com,832-709-0236; 281-404-9194; 281-895-3114; 713-832-0282,,A,90,Official website verified in source dataset
+HVAC-043,"Wise Heating & Air Conditioning, LLC",paradise,texas,wiseheating-air.com,,,A,90,Source-data validated; live verification not performed
+HVAC-044,Airsheen Services,austin,texas,airsheenservices.com,,,A,85,Source-data validated; live verification not performed
+HVAC-045,BRAZOSPORT PLUMBING & HEATING CO.,freeport,texas,brazosportplumbing.com,,,A,85,Source-data validated; live verification not performed
+HVAC-046,"C.A.W. HVAC, INC.",alice,texas,cawhvacinc.com,,,A,85,Source-data validated; live verification not performed
+HVAC-047,EDWARDS AIR CONDITIONING & HEATING,midland,texas,edwardsairconditioning.com,,,A,85,Source-data validated; live verification not performed
+HVAC-048,"Endur Services, LLC",austin,texas,endurcompanies.com,,,A,85,Source-data validated; live verification not performed
+HVAC-049,"Montgomery HVAC Service Company, LLC.",wylie,texas,montgomerysvc.com,,,A,82,Source-data validated; live verification not performed
+HVAC-050,ASHRAE Fort Worth Chapter,fort worth,texas,ashrae-ftw.org,,,A,80,Source-data validated; live verification not performed
+HVAC-051,Air Solutions Partners,dallas,texas,asphvac.com,(214) 681-6203,,A,80,Official website verified in source dataset
+HVAC-052,D & D PLUMBING HEATING AND A/C INC,midland,texas,danddmidland.com,,,A,80,Source-data validated; live verification not performed
+HVAC-053,"DAVID G. HALLEY & CO., INC.",lubbock,texas,dghco.com,,,A,80,Source-data validated; live verification not performed
+HVAC-054,North Tarrant Heating & Air,fort worth,texas,northtarrantac.com,,,A,80,Source-data validated; live verification not performed
+HVAC-055,"RAYMARK AIRCONDITIONING & HEATING, INC.",porter,texas,raymarkac.net,,,A,80,Source-data validated; live verification not performed
+HVAC-056,VALDERRAMA A/C & REFRIGERATION INC.,south houston,texas,valderramahvac.com,,,A,80,Source-data validated; live verification not performed
+HVAC-057,WOODS COMFORT SYSTEMS,san marcos,texas,woodscomfortsystems.com,,,A,80,Source-data validated; live verification not performed
+HVAC-058,"Regency Plumbing Contractors, LLC",houston,texas,regencyplumbing.com,,,A,80,Source-data validated; live verification not performed
+HVAC-059,Star Cooling Towers,deer park,texas,starcoolingtowers.com,,,A,80,Source-data validated; live verification not performed
+HVAC-060,American Air Conditioning & Heating Co.,san antonio,texas,americanairconditioningsa.com,,,B,78,Source-data validated; live verification not performed
+HVAC-061,ALAMO WATER SOFTENERS,san antonio,texas,alamowatersofteners.com,,,B,75,Source-data validated; live verification not performed
+HVAC-062,"Allied Flow Specialists, Inc.",waxahachie,texas,alliedflow.com,,,B,75,Source-data validated; live verification not performed
+HVAC-063,"Charlie's Plumbing, Inc.",houston,texas,charliesplumbing.com,,,B,75,Source-data validated; live verification not performed
+HVAC-064,Saye Plumbing Contractors Inc.,houston,texas,sayeplumbing.com,,,B,75,Source-data validated; live verification not performed
+HVAC-065,"East Coast Mechanical HVAC, LLC",spring,texas,myairconditioningman.com,,,B,72,Source-data validated; live verification not performed
+HVAC-066,Fresh AC Tech LLC Air Conditioning & Heating,spring,texas,freshtechac.com,,,B,72,Source-data validated; live verification not performed
+HVAC-067,HAWK PLUMBING HEATING AND A/C INC,fort worth,texas,hawkphac.com,,,B,72,Source-data validated; live verification not performed
+HVAC-068,"Lowery Plumbing, Heating & Air Conditioning",lubbock,texas,trustlowery.com,,,B,72,Source-data validated; live verification not performed
+HVAC-069,MISSION PLUMBING HEATING & A/C CO INC,san antonio,texas,mphac.com,,,B,72,Source-data validated; live verification not performed
+HVAC-070,Rush Refrigeration,hutto,texas,rushrefrigeration.com,,,B,72,Source-data validated; live verification not performed
+HVAC-071,Holden Rainwater,bulverde,texas,holdenrainwater.com,,,B,70,Source-data validated; live verification not performed
+HVAC-072,"PATRICK ELECTRIC SERVICE, INC.",amarillo,texas,patrickcompanies.com,,,B,70,Source-data validated; live verification not performed
+HVAC-073,Service Squad Plumbing,fort worth,texas,servicesquad.com,,,B,70,Source-data validated; live verification not performed
+HVAC-074,"SAWYER PLUMBING SERVICE, LLC",denton,texas,sawyerplumbingservices.com,,,B,68,Source-data validated; live verification not performed
+HVAC-075,Total Plumbing Service Inc.,rowlett,texas,totalplumbing.net,,,B,68,Source-data validated; live verification not performed
+HVAC-076,EP MECHANICAL TECHNOLOGIES INC,el paso,texas,epmechtech.com,,,B,65,Source-data validated; live verification not performed
+HVAC-077,Eco Mechanical Services Of Greater Houston,stafford,texas,ecomechanical.com,,,B,65,Source-data validated; live verification not performed
+HVAC-078,"Phoenix Mobile Air, Inc.",carrollton,texas,phoenixmobileair.com,,,B,65,Source-data validated; live verification not performed
+HVAC-079,"TEXAS SELECT PLUMBING, LLC",magnolia,texas,texasselectplumbing.com,,,B,65,Source-data validated; live verification not performed
+HVAC-080,"Precise Mechanical Sales & Service, Inc.",humble,texas,precisemech.com,,,B,62,Source-data validated; live verification not performed
+HVAC-081,5 STAR A/C FILTER,katy,texas,5starac.com,,,B,60,Source-data validated; live verification not performed
+HVAC-082,AIRFIX LLC,magnolia,texas,airfixllc.com,,,B,60,Source-data validated; live verification not performed
+HVAC-083,"B. K. MECHANICAL SERVICES, INC.",silsbee,texas,bkmechanical.com,,,B,60,Source-data validated; live verification not performed
+HVAC-084,"Harold James, Inc.",fort worth,texas,haroldjames.com,,,B,60,Source-data validated; live verification not performed
+HVAC-085,J & M SERVICES,iraan,texas,jmkservice.com,,,B,60,Source-data validated; live verification not performed
+HVAC-086,Jim's Plumbing Now,carrollton,texas,jimsplumbingnow.com,,,B,60,Source-data validated; live verification not performed
+HVAC-087,Spring Plumbing,spring,texas,springplumbing.net,,,B,60,Source-data validated; live verification not performed
+HVAC-088,"REED PLUMBING, INC.",kennedale,texas,reedplumbinginc.com,,,C,58,Source-data validated; live verification not performed
+HVAC-089,"STINKY STEVES SEPTIC & GREASE, LLC.",abilene,texas,stinkystevessepticandgrease.com,,,C,58,Source-data validated; live verification not performed
+HVAC-090,Velocity Mechanical Inc,tyler,texas,velocitymech.com,,,C,58,Source-data validated; live verification not performed
+HVAC-091,"WATSON AIR SERVICES, INC.",hewitt,texas,watsonairservices.com,,,C,58,Source-data validated; live verification not performed
+HVAC-092,360 MECHANICAL LLC,new braunfels,texas,360mech.com,,,C,52,Source-data validated; live verification not performed
+HVAC-093,A Team Plumbing Inc,conroe,texas,ateamplumbinginc.com,,,C,52,Source-data validated; live verification not performed
+HVAC-094,ACE MECHANICAL,odessa,texas,acemechanicaltx.com,,,C,52,Source-data validated; live verification not performed
+HVAC-095,"AIRMAX, INC.",celina,texas,airmaxntx.com,,,C,52,Source-data validated; live verification not performed
+HVAC-096,"AIRTRONICS, INC.",katy,texas,airtronicstx.com,,,C,52,Source-data validated; live verification not performed
+HVAC-097,"ASH AUTOMATED CONTROL SYSTEMS, LLC",fulshear,texas,ash-acs.com,,,C,52,Source-data validated; live verification not performed
+HVAC-098,"Al Mac Plumbing & Gas, LLC",austin,texas,almacplumbingatx.com,,,C,52,Source-data validated; live verification not performed
+HVAC-099,"BAC TRAC PLUMBING, L.P.",houston,texas,bactracplbg.com,,,C,52,Source-data validated; live verification not performed
+HVAC-100,Cool Component HTG. & A/C Inc.,san antonio,texas,coolcomponentinc.com,,,C,52,Source-data validated; live verification not performed
+HVAC-101,"Doran Mechanical, LLC",tyler,texas,lexetx.com,,,C,52,Source-data validated; live verification not performed
+HVAC-102,"Douglas Mechanical, Inc.",spring,texas,douglas-inc.com,,,C,52,Source-data validated; live verification not performed
+HVAC-103,Edco Mechanical LLC,houston,texas,edcomechanical.com,,,C,52,Source-data validated; live verification not performed
+HVAC-104,"Farwell Sheet Metal, Llc.",fort worth,texas,farwellmetal.com,,,C,52,Source-data validated; live verification not performed
+HVAC-105,"HCRS, INC.",san angelo,texas,hcrsinc.com,,,C,52,Source-data validated; live verification not performed
+HVAC-106,INTEGRITY MECHANICAL LLC,round rock,texas,integrityairandheat.com,,,C,52,Source-data validated; live verification not performed
+HVAC-107,Mcbride Plumbing Inc,amarillo,texas,mcbrideplumbing.com,,,C,52,Source-data validated; live verification not performed
+HVAC-108,Mesa Mechanical,houston,texas,mesamechanical.com,,,C,52,Source-data validated; live verification not performed
+HVAC-109,"OPIELA MECHANICAL, INC.",san antonio,texas,opielaplumbing.com,,,C,52,Source-data validated; live verification not performed
+HVAC-110,QUALITY LIVING SERVICES,austin,texas,qualitylivingservices.com,,,C,52,Source-data validated; live verification not performed
